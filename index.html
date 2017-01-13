@@ -1,0 +1,86 @@
+<!--
+
+DICAS
+=====
+
+- jQuery Mobile: http://www.w3schools.com/jquerymobile/default.asp
+
+- Páginas e caixas de diálogos: http://www.w3schools.com/jquerymobile/jquerymobile_pages.asp
+
+- Transições entre páginas: http://www.w3schools.com/jquerymobile/jquerymobile_transitions.asp
+
+- Botões e links: http://www.w3schools.com/jquerymobile/jquerymobile_buttons.asp
+
+- Ícones de botões: http://www.w3schools.com/jquerymobile/jquerymobile_icons.asp
+
+- Janelas Popup: http://www.w3schools.com/jquerymobile/jquerymobile_popups.asp
+
+- Barra de ferramentas: http://www.w3schools.com/jquerymobile/jquerymobile_toolbars.asp
+
+- Barra de navegação: http://www.w3schools.com/jquerymobile/jquerymobile_navbars.asp
+
+- Painéis retrateis: http://www.w3schools.com/jquerymobile/jquerymobile_panels.asp
+
+- Conteúdos ocultos: http://www.w3schools.com/jquerymobile/jquerymobile_collapsibles.asp
+
+- Tabelas dinâmicas: http://www.w3schools.com/jquerymobile/jquerymobile_tables.asp
+
+- Componentes de formulários: http://www.w3schools.com/jquerymobile/jquerymobile_form_basic.asp
+
+- Funções e eventos: http://www.w3schools.com/jquerymobile/jquerymobile_events_intro.asp
+
+-->
+
+<html>
+
+<head>
+
+<!-- Configurar página --> 
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1" charset="iso-8859-1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+<!-- Importa bibliotecas --> 
+<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+<script src="jquery/jquery-1.11.3.min.js"></script>
+<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- PÁGINA INICIAL--> 
+<div data-role="page" id="pg_inicial">
+
+  <!-- Cabeçalho --> 
+  <div data-role="header">
+    <h3>CHIMARRÃO</h3>
+  </div>
+
+  <!-- Corpo -->  
+  <div data-role="content">  
+    <!-- Formulário --> 
+    <form id="verificacao" class="ui-body ui-body-a ui-corner-all" data-ajax="false" method="post" action="menu.php">
+      <fieldset>
+      <div data-role="fieldcontain">
+        <!-- Campos --> 
+        <label for="vNome">Qual seu nome? </label>
+        <input type="text" name="vNome" id="vNome" value=""/>
+      </div>                                  
+      <!-- Botão --> 
+      <input type="submit" data-theme="b" data-icon="carat-d" name="vConfirmar" id="vConfirmar" value="Confirmar">
+      </fieldset>
+    </form>                              
+  </div>
+
+  <!-- Rodapé --> 
+  <div data-role="footer">
+    <h3>Versão 1.0</h3>
+  </div>
+
+</div>
+
+
+</body>
+
+</html>
